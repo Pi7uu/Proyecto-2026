@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1a1c1c",
+                    "surface-bright": "#f9f9f9",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-container-low": "#f3f3f4",
+                    "primary": "#5d5f5f",
+                    "tertiary-fixed-dim": "#bccbb7",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary-container": "#656464",
+                    "surface-container-high": "#e8e8e8",
+                    "outline-variant": "#c4c7c8",
+                    "tertiary": "#556251",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#d8e7d2",
+                    "on-tertiary-fixed": "#131e12",
+                    "on-tertiary-container": "#5a6857",
+                    "on-surface-variant": "#444748",
+                    "surface-tint": "#5d5f5f",
+                    "inverse-surface": "#2f3131",
+                    "on-primary-container": "#636465",
+                    "on-tertiary-fixed-variant": "#3d4a3b",
+                    "inverse-primary": "#c6c6c6",
+                    "on-surface": "#1a1c1c",
+                    "outline": "#747878",
+                    "background": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "surface": "#f9f9f9",
+                    "surface-container-highest": "#e2e2e2",
+                    "secondary-container": "#e4e2e1",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "tertiary-container": "#d8e6d1",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#dadada",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e2e2e2",
+                    "secondary-fixed": "#e4e2e1",
+                    "secondary": "#5f5e5e",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "label-sm": ["DM Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .product-image-zoom { transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .product-image-zoom:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto flex justify-between items-center h-20 px-gutter">
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface-variant" href="#">LUMINA SILVER</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface font-medium border-b border-on-surface pb-1 font-label-sm uppercase tracking-widest" href="#">Anillos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors font-label-sm uppercase tracking-widest" href="#">Collares</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors font-label-sm uppercase tracking-widest" href="#">Aros</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors font-label-sm uppercase tracking-widest" href="#">Tobilleras</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors font-label-sm uppercase tracking-widest" href="#">Dijes</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface hover:opacity-70 transition-opacity">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface hover:opacity-70 transition-opacity">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Image Gallery (Left) -->
+<div class="md:col-span-7 flex flex-col gap-6">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Main product view" class="w-full h-full object-cover product-image-zoom" data-alt="A professional high-resolution studio photograph of a minimal 925 sterling silver ring with a crescent moon design. The ring is set against a pristine, soft-gray minimalist background with soft diffused lighting that emphasizes the metallic luster and polished texture of the silver. The aesthetic is clean, sophisticated, and luxurious, following a light-mode editorial style with subtle natural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRQXoVAo9yzx5EEC10yQ3BGiLVv1li_fVUGQ1c2sS3AmIdnOsi4A6mO6Ed5Jvh3avt6zHLXMtL8bytAkt9328U7CYOfnwZTLM-3_IiXl-JdfsCv43t3aKAkrUeWQVyAC4dtHdoJSEFZU-9PCnKVJBkJX7AVLmUBwK8lHMdPBjTptkzWgNkd1zdXH_wIA7R2eYXBlHBsP8JqTKt8bY4X4O55O0IbWP4AFKluoPrMUysbkMUNmlkeHDMaFTQNlfXVM1ckJ29PG1zJ6w"/>
+</div>
+<div class="grid grid-cols-3 gap-6">
+<div class="aspect-square bg-surface-container-low overflow-hidden cursor-pointer group">
+<img alt="Detail view 1" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="A close-up macro photograph showing the intricate 925 silver hallmark and the delicate moon carving on the side of a silver ring. The lighting is high-key and bright, reflecting off the mirror-finished sterling silver surface. The composition is artistic and minimalist, set in a high-end luxury jewelry gallery atmosphere with a neutral, soft color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvC_Ql_IB6hImQaOId5r-ngks09RFeOLU_NhHdhhWTQ1pnCjXh-kt__edQ6B8g6cK8JUSD20wliOTNsg34wFZpKQc8J6d2nJfJsWgFEdiXdtfJspmP14jBf4tozyVAyTADjLUZnLnyijCTcZ45F-UDbNUkUoVGiEHJc5k3nHK4x6x_L2NifqUKJ78dznDLsHGHPhx1RRolm_oEBRzD16cm7FrI-9jMv47Pt5CH92_iq8BPUMmSnKu8UYXLG7wuCIXV0pQxuzqorUc"/>
+</div>
+<div class="aspect-square bg-surface-container-low overflow-hidden cursor-pointer group">
+<img alt="On model view" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="An editorial lifestyle shot of a woman's hand wearing a delicate 925 sterling silver moon ring. The skin is softly lit, and the overall mood is serene and aspirational. The background is a blurry, warm-toned neutral interior, emphasizing the silver's shimmering contrast. The style is modern minimalist with a focus on understated luxury and high-quality textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIzENxwVGgYi-jRVqVx_8m6KVmxKZcvBfXf8PDALA1x8E4Dk6_0Zyf8nj7Pvnqi-SnhqsQS7CwzuyFCaqcQuGL6kgG3gUZHKQXCws7TFntkst4z1XAFAaRECrFivs71mV7ctojxgpfZZmL60FXOYcrl1z_-NEem22BAHqD2M0iUWIpUF2lVyR2_SQpwEMpeKQ5KJ3juqT_9acvnIyjrj0xYG4cg9pHj_ey4Nhjrse9Qd749LyDt1okYoEaZZHQHsLX1jvRSZ1lgI0"/>
+</div>
+<div class="aspect-square bg-surface-container-low overflow-hidden cursor-pointer group">
+<img alt="Packaging view" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="A sophisticated product presentation of a silver jewelry box featuring the LUMINA SILVER branding. The box is made of high-quality textured white paper with a matte charcoal logo. The jewelry rests on a soft velvet cushion inside. The lighting is soft and professional, capturing a sense of calm aspiration and the tactile quality of premium packaging in a minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbCPdR0okBZU-3CsIMZCneGZbmSH_5FCynV7ganuR4jHR4Jg6jkPKY_-ux94-AHLlgMnlBujiBi-KbzaiJBzssavgewR0C88p4WgK_bhMhB2H8lx2ZU5UDgiRWnPZwOeOiE608DelaKNiHmoAs4xS0qq8MFEPfnLvRNlFKdTa8_k104shqxpDeEMXFGZPjV5sDzLLDeoreoavCBG_ffr8mveHJaozE9I7tnkKM1xDwHV4RCkc1-3W5caCdeajKGGLKP4lXhbk0Lws"/>
+</div>
+</div>
+</div>
+<!-- Product Info (Right) -->
+<div class="md:col-span-5 flex flex-col pt-4">
+<div class="mb-2">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-sm rounded-full tracking-widest uppercase">925 Sterling</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">Anillo Luna de Plata</h1>
+<p class="font-body-md text-on-surface-variant mb-6 italic">Material: Plata 925</p>
+<div class="text-headline-md font-headline-md text-on-surface mb-8">
+                    $85.00
+                </div>
+<div class="mb-8">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant">Seleccionar Talla</span>
+<a class="text-label-sm underline underline-offset-4 decoration-outline-variant hover:decoration-primary transition-all" href="#">Guía de tallas</a>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95">5</button>
+<button class="w-12 h-12 border border-primary flex items-center justify-center font-body-md bg-surface-container-highest font-bold active:scale-95">6</button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95">7</button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95">8</button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95">9</button>
+</div>
+</div>
+<div class="space-y-4 mb-10">
+<button class="w-full py-5 bg-inverse-surface text-inverse-on-surface font-label-sm uppercase tracking-[0.2em] rounded-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
+                        Comprar Ahora
+                    </button>
+<button class="w-full py-5 border border-inverse-surface text-inverse-surface font-label-sm uppercase tracking-[0.2em] rounded-lg hover:bg-surface-container transition-colors active:scale-[0.98]">
+                        Añadir al Carrito
+                    </button>
+</div>
+<!-- Product Features / Accordion Style -->
+<div class="border-t border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Descripción</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="mt-4 text-on-surface-variant font-body-md leading-relaxed">
+                        Inspirado en la serenidad celestial, el Anillo Luna está forjado artesanalmente en plata de ley 925. Su silueta minimalista y acabado pulido espejo reflejan la luz de manera etérea, capturando la esencia de la elegancia atemporal.
+                    </div>
+</div>
+<div class="border-t border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Envíos y Devoluciones</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden mt-4 text-on-surface-variant font-body-md leading-relaxed">
+                        Envío gratuito en todos los pedidos superiores a $150. Las devoluciones se aceptan dentro de los 30 días posteriores a la recepción, siempre que el producto se encuentre en su estado y embalaje original.
+                    </div>
+</div>
+<div class="border-t border-b border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Cuidado de la Joya</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden mt-4 text-on-surface-variant font-body-md leading-relaxed">
+                        Evite el contacto con perfumes y productos químicos. Limpie suavemente con el paño de pulido incluido en su pedido para mantener el brillo radiante de la plata.
+                    </div>
+</div>
+</div>
+</div>
+<!-- Recommended Section -->
+<section class="mt-section-gap">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Recomendados para ti</h2>
+<div class="w-20 h-[1px] bg-primary-fixed"></div>
+</div>
+<a class="font-label-sm uppercase tracking-widest underline underline-offset-8 decoration-outline-variant hover:text-primary transition-colors" href="#">Ver toda la colección</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Recommendation Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A delicate sterling silver chain necklace with a small geometric pendant. The photography style is light-mode editorial, featuring high-key lighting and a soft neutral gray background. The overall mood is sophisticated and minimal, showcasing the fine detail and shimmer of the 925 silver craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC769Izs8_BcUh2s45StzCX_8Mkd8Q2_1toSPPnszyyCUmuBhfpc-H_4_mTMqPd6jkVEvEwX2q34zfAhlQqoCShFCEL_2h2VjQYxLx9vdYxTnH1-zsKZQ0eArcCMzbtT8ZiLeZHtL8zhactEPQ9NsyEGHwOCwTNesJxJmOJAB6QAnatdKGZtc-nq0qklcXG889FftcufZYRu03V6D3uwmFhg4GigrnRxZRhqsrzgj0KdoB2jY8H5GkMqWhEClSPS-tgJ56lrYKFEiY"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full py-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm uppercase tracking-widest border border-outline-variant/50">Añadir Rápido</button>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] mb-1">Gargantilla Estelar</h3>
+<p class="font-body-md text-on-surface-variant">$110.00</p>
+</div>
+<!-- Recommendation Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek and modern sterling silver hoop earrings with a brushed matte finish. Shot in a bright studio environment with clean white aesthetics and soft shadows. The image highlights the minimalist design and architectural form of the silver jewelry, perfect for a high-end luxury brand experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARtFyUmEny7Hn-1gHDyCs4mMUwDKGmak1oSJdFbUOpnAltl2LSScUSQaqxnmk30Z_NjVsunvHEUsbxmKIcB-ZCn7AQRO0QLAAEiy1cH43KUBrKT9xbJOsmVWXVc5Tj6ZgCL1NxiiavBToPwjy-nWyIEIavMIf0DyjHObe8XL8ZdqXjc3Mh7LjOa8POY8NMononyhMOfbArQx8IEj84vJSE3ZB5SUrL24Vs4a93sh8r9uVoIu12FkvS_486_9NFX_ZoP9Nei36dmzk"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full py-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm uppercase tracking-widest border border-outline-variant/50">Añadir Rápido</button>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] mb-1">Aros Minimal</h3>
+<p class="font-body-md text-on-surface-variant">$65.00</p>
+</div>
+<!-- Recommendation Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxurious sterling silver bangle bracelet with an organic, hand-sculpted texture. The background is a soft ivory cream color, and the lighting is warm yet bright, creating a serene and aspirational visual. The focus is on the tactile quality of the precious metal and the craftsmanship behind the piece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw9Ie38kosXkZhtHEq8Bdht35qOQWX85AubFm4WbMGDa7N0cHRRT_PmMuWZ8wBf3HTDQ_Ae-FYRf7SYjDxUJmUtCyNvo2F6X-nzpNp8oqXSTe1fmIhlAwr-KbfvzbG00_spEvN7G_wM--BIAvWM1uaiDBJJoYzU2qghRmuV_yanGsmOYla9TiyveXrQ_LwIKLvv2yUfRWQeZlttnBIs8J8l2XXCqhr0MhtF9bDkB5jwAssPCzQ0Tz0U3sUaE_Drlxu_kGwdKkReCA"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full py-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm uppercase tracking-widest border border-outline-variant/50">Añadir Rápido</button>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] mb-1">Brazalete Infinito</h3>
+<p class="font-body-md text-on-surface-variant">$145.00</p>
+</div>
+<!-- Recommendation Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A pair of small, elegant silver stud earrings featuring a polished droplet shape. The image is captured with professional macro lens settings on a clean light-silver background. The lighting highlights the reflective brilliance of the 925 sterling silver, emphasizing a timeless and pure aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3yjGrAQpQnJNX9iZJGb_qRVEqF5xu_A2kUSkiy3Yj9HaOo2UlbjfJoeG8YiCj0sDWinC7vO8P2VaWMVefXVnP6HUWYejkqb11Yvifg7TnQ4WmGspuk6Lc76a6MWsp1XUeyyw7Lbs4IVhUrqOVY-Q5W4RbBWfGOWPuh5OBFj_4OoDXwgykUznpi4tMPzOBHwlBLoUGwsplls8VnTLcDEIelzBaPevijawfbHEtepZU1COVwA4GuKy4OKUbGFh2vndORjQpWk60Hyk"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full py-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm uppercase tracking-widest border border-outline-variant/50">Añadir Rápido</button>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] mb-1">Topos Gota</h3>
+<p class="font-body-md text-on-surface-variant">$45.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface w-full py-section-gap border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-6">
+<span class="font-display-lg text-headline-md text-on-surface">LUMINA SILVER</span>
+<p class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md leading-relaxed">
+                    Joyas en plata 925 diseñadas para perdurar. La elegancia de lo esencial en cada pieza.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Compañía</h4>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Nuestra Historia</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Cuidado de Joyas</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Contacto</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Asistencia</h4>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Guía de Tallas</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Envíos</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors underline underline-offset-8 decoration-1 hover:decoration-primary" href="#">Preguntas Frecuentes</a>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface mb-2">Newsletter</h4>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline py-2 focus:outline-none focus:border-primary transition-colors font-body-md" placeholder="Tu email" type="email"/>
+<button class="absolute right-0 bottom-2 material-symbols-outlined text-primary">arrow_forward</button>
+</div>
+<div class="flex gap-4 mt-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter mt-20 pt-8 border-t border-outline-variant/10">
+<p class="text-center font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant opacity-60">
+                © 2024 LUMINA SILVER. CRAFTED IN 925 STERLING.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple UI Interaction Logic
+        document.querySelectorAll('.aspect-square.cursor-pointer').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const mainImg = document.querySelector('img[data-alt*="Main product view"]');
+                const thumbImg = thumb.querySelector('img');
+                const tempSrc = mainImg.src;
+                mainImg.src = thumbImg.src;
+                // Note: Not swapping data-alt to avoid breaking prompt logic in this mockup
+            });
+        });
+    </script>
+</body></html>

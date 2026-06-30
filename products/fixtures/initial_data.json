@@ -1,0 +1,223 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Anillo Celestial Minimal",
+      "slug": "anillo-celestial-minimal",
+      "category": "anillos",
+      "description": "Inspirado en la serenidad celestial, este anillo est\u00c3\u00a1 forjado artesanalmente en plata de ley 925. Su silueta minimalista y acabado pulido espejo reflejan la luz de manera et\u00c3\u00a9rea, capturando la esencia de la elegancia atemporal.",
+      "price": "85.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAW-rDznOScdyxzTYWU3Eu9Z_OtTTM7NyHLZLW9pH0B6ESpsqSPA-Y8MlOsonK2MeJJiIpPh0uOc5aev9UX8HCVg-jDltIKWnm-bl9an1o7-bE2SZyXScrsnMWDt85kUVcf08ULFRuolNNl7tv30fgnQI4jLFIPJVxRALfwV5tne6XOG0lr5oXLewlK-0rU2tOoqISbSoFo4wfSjLELagB5dZ5eWWlw__JKMoh26QtMwmGHB6Ab1MlO0mVoZh4lfzynh9KrdONbWo0",
+      "is_limited_edition": false,
+      "stock": 15,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Cadena de Eslabones Finos",
+      "slug": "cadena-de-eslabones-finos",
+      "category": "collares",
+      "description": "Delicada cadena de eslabones finos elaborada en plata 925. Su dise\u00c3\u00b1o vers\u00c3\u00a1til la convierte en la pieza ideal para usar sola o con tu dije favorito. El cierre de lobster garantiza seguridad y durabilidad.",
+      "price": "120.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkMZBQ0KAgJlpG2a21wl2cIFPykg_P8wXhnxMnChwMp1CICCuihP9pPvyiGJLNxJvjE3hKN7uE7qPtGY1ClITMNUq_J0MYVJBEjcblp0XrIWAgV0sqBafXITUUPNe32TaBozU9ceR_BpE8vBJeaWFnuoCuPI6DjmBWpJtAFCKbwk2BJ9eSzL7uH545gkDv-t6fo3qu53UCtjagL1XY1mZS77teIgoF0XOhWEqYENx3f6b98UFyH0UA4H93GEr42Iv44yBLK3sAJ7A",
+      "is_limited_edition": true,
+      "stock": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Argollas Twist Escult\u00c3\u00b3ricas",
+      "slug": "argollas-twist-escultoricas",
+      "category": "aros",
+      "description": "Argollas con un moderno dise\u00c3\u00b1o twist que juega con la luz desde cada \u00c3\u00a1ngulo. Forjadas en plata 925, estas piezas escult\u00c3\u00b3ricas aportan un toque arquitect\u00c3\u00b3nico y sofisticado a cualquier look.",
+      "price": "95.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDzjC2k80zroWrGzUdpZt5Wx3Nv49x5OGd7XcV_HDTU6tMZ8IV9X7G4NGD5utPpHMI8zKgA3gKNdRaf9Zf2eUUxom-gLbwg5Hc5kCP9WF2YIk0qHfDQvk0LvXKynPE0H2chAumMHoqkhIqwsdsvArEkIN3a0Hxu4IwtyQMmtCQ4MtP5Hb54qvgO95a8H4gbulWEMSdvVatkR-bXN2U9Dg9bZ1MlKqiNUgNPgKmiHgarGn0ld9fxgncF3l8b-Ix81IGiydipvYYeKSg",
+      "is_limited_edition": false,
+      "stock": 20,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Tobillera Brisa del Mar",
+      "slug": "tobillera-brisa-del-mar",
+      "category": "tobilleras",
+      "description": "Tobillera artesanal con peque\u00c3\u00b1os charms que evocan la brisa marina. Cada eslab\u00c3\u00b3n est\u00c3\u00a1 cuidadosamente ensamblado a mano en plata 925, creando una pieza ligera y llena de movimiento que acompa\u00c3\u00b1a tus pasos.",
+      "price": "65.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3giowNNAlJAENAu-Lm90aU0qI3sO6oCitsZ9lNcvK2Q7IWuTu1Ct4Mp2Ju0G8tyTV0lRhJh4OtzinI9SJNy70f64yGEx3m_BLWdwmbK2DVPxOGxjSLFRQzIUXUntf5JUHEey3FxWrICFJYHXOlxB6GvccT2ZKc0GAtD9eqZswFbARZh3If9Ziw63Nbc78wWnij_HPraOseTgtFtuuPNcCU_BU6vf5c7NvZzeVTupfXI7Zb8P6vhKbIWfhfuQLZkjDBWs2E72LaFQ",
+      "is_limited_edition": false,
+      "stock": 12,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Dije Gota de Mercurio",
+      "slug": "dije-gota-de-mercurio",
+      "category": "dijes",
+      "description": "Dije con forma de gota fluida que captura la esencia del mercurio. Su superficie pulida crea reflejos hipn\u00c3\u00b3ticos, y su perfil org\u00c3\u00a1nico lo convierte en una pieza de declaraci\u00c3\u00b3n \u00c3\u00banica. Incluye cadena a juego.",
+      "price": "45.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIiR2U-E2K2AIKNQ0kD-ALD_IUBviOJ3Zg19SOamoFObcx1Q6tUSZdAM2DgWqVPNOVJJ08PF7A5bpORay6P9WpSbButSGOf-Xmh6eGMCpbdfcqnHoCJXC7Bg9coc5CIcLydtsjG26qZjOUh3RjSr-ApSJkHGu5cfqgijM7yAqejRs5Ex_-euZHg5C-fLOJkw0WzCOhYWce2qpkZe5uIv9B0VHyB7P5W51iTsToIkRK504YEVKSgFrku020C8ru9Idf4FMxNnboKYc",
+      "is_limited_edition": false,
+      "stock": 25,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Anillo de Sello Moderno",
+      "slug": "anillo-de-sello-moderno",
+      "category": "anillos",
+      "description": "Anillo de sello con acabado cepillado mate que le otorga una est\u00c3\u00a9tica contempor\u00c3\u00a1nea y audaz. Su superficie ancha y perfil bajo lo hacen c\u00c3\u00b3modo para uso diario, manteniendo una presencia sofisticada.",
+      "price": "110.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjUepOBEiXgHzU3U9Jef4M_SPFfNESmIqvHJphPkCH-VnwIju3b5ohLOkQzTlART4jjC7lgXrRxwUiVNG1w7K0VhkEWxV49Kr_rrDhgdht24nUcEPlEl44d3VdevKASOycPDRtoGSaSSvdyW8O_Q24CCNWcdxQgFg7Xl-0CaXsESHDh5MN86V_sn94Z7mDY7wNOFk4y0MbHWB8rFNNaUsY1FaOZW6ApOxuxoaKGvU38u_wEWlmhvq6gYV6haLKEFPJoBCCu_gIwnY",
+      "is_limited_edition": false,
+      "stock": 10,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Medall\u00c3\u00b3n de Memoria",
+      "slug": "medallon-de-memoria",
+      "category": "collares",
+      "description": "Medall\u00c3\u00b3n cl\u00c3\u00a1sico con apertura lateral, perfecto para guardar una fotograf\u00c3\u00ada o un peque\u00c3\u00b1o recuerdo. Su superficie lisa admite grabado personalizado. Fabricado en plata 925 con cadena de eslabones incluida.",
+      "price": "145.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBmBBHj568ly0_i4BbA9osrKI7bd7HKQ1FnD9FfjGQBG3wJWuH8G_axBLI3l3LXwNcHkTJZ7USrQN4ijufFRGi3gvvt187ldAK4NSbECydSn64z6CUSfCHaKnNP-ha_qiMYDRURIatHrjkcp9V_vWgm5ojI5W79f8EeG5EmsnflebZUlq88_Tk0monE0suhxHV6QRiWMXyo1JDqY87zAsmDNr3l3uCh7jKQOldFeoH-8BPhv_3ZYPUWBEg7y-V8t_qdN33EKvTs6g0",
+      "is_limited_edition": false,
+      "stock": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Mini Aretes Estelares",
+      "slug": "mini-aretes-estelares",
+      "category": "aros",
+      "description": "Peque\u00c3\u00b1os aretes en forma de estrella, sutiles y llenos de brillo. Su tama\u00c3\u00b1o compacto los hace perfectos para el uso diario, aportando un destello de luz a cualquier look. Cierre de push-back para m\u00c3\u00a1xima comodidad.",
+      "price": "40.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaYentpiHHOKc-xb94dLdIKedUXD6XZfHstyJyOhQ-ADl1843hCNqw8dMn5YOMjqaPIbYreAbGr6ADCt1EzxxVKzKU7yGO8HZ9HIyqvee7s29888_YeGZzVmVAJGx30zbaeOrwnaet1-AGGjpWsK6j-HyKB81wAG0f-O9MHPEV3BZkVEGul4v9CF33-wUkStUB2RcrnkK-D4OdMDev9qbiBgUhfKHbWWOYxgjS0gMVS8sNTdnPZM6KGqmUXDRyS_CvchjGQNIsBZU",
+      "is_limited_edition": false,
+      "stock": 30,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Anillo Luna de Plata",
+      "slug": "anillo-luna-de-plata",
+      "category": "anillos",
+      "description": "Inspirado en la serenidad celestial, el Anillo Luna est\u00c3\u00a1 forjado artesanalmente en plata de ley 925. Su silueta minimalista y acabado pulido espejo reflejan la luz de manera et\u00c3\u00a9rea, capturando la esencia de la elegancia atemporal.",
+      "price": "85.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCRQXoVAo9yzx5EEC10yQ3BGiLVv1li_fVUGQ1c2sS3AmIdnOsi4A6mO6Ed5Jvh3avt6zHLXMtL8bytAkt9328U7CYOfnwZTLM-3_IiXl-JdfsCv43t3aKAkrUeWQVyAC4dtHdoJSEFZU-9PCnKVJBkJX7AVLmUBwK8lHMdPBjTptkzWgNkd1zdXH_wIA7R2eYXBlHBsP8JqTKt8bY4X4O55O0IbWP4AFKluoPrMUysbkMUNmlkeHDMaFTQNlfXVM1ckJ29PG1zJ6w",
+      "is_limited_edition": false,
+      "stock": 18,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Gargantilla Estelar",
+      "slug": "gargantilla-estelar",
+      "category": "collares",
+      "description": "Gargantilla con dije geom\u00c3\u00a9trico que captura la luz como una constelaci\u00c3\u00b3n. Su dise\u00c3\u00b1o minimalista y cadena ajustable la hacen vers\u00c3\u00a1til para cualquier escote. Un b\u00c3\u00a1sico de lujo para tu colecci\u00c3\u00b3n.",
+      "price": "110.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC769Izs8_BcUh2s45StzCX_8Mkd8Q2_1toSPPnszyyCUmuBhfpc-H_4_mTMqPd6jkVEvEwX2q34zfAhlQqoCShFCEL_2h2VjQYxLx9vdYxTnH1-zsKZQ0eArcCMzbtT8ZiLeZHtL8zhactEPQ9NsyEGHwOCwTNesJxJmOJAB6QAnatdKGZtc-nq0qklcXG889FftcufZYRu03V6D3uwmFhg4GigrnRxZRhqsrzgj0KdoB2jY8H5GkMqWhEClSPS-tgJ56lrYKFEiY",
+      "is_limited_edition": false,
+      "stock": 10,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Aros Minimal",
+      "slug": "aros-minimal",
+      "category": "aros",
+      "description": "Aros de perfil ultrafino con acabado satinado. Su dise\u00c3\u00b1o depurado y minimalista los convierte en el acompa\u00c3\u00b1ante perfecto para cualquier ocasi\u00c3\u00b3n, desde la oficina hasta una cena elegante.",
+      "price": "65.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuARtFyUmEny7Hn-1gHDyCs4mMUwDKGmak1oSJdFbUOpnAltl2LSScUSQaqxnmk30Z_NjVsunvHEUsbxmKIcB-ZCn7AQRO0QLAAEiy1cH43KUBrKT9xbJOsmVWXVc5Tj6ZgCL1NxiiavBToPwjy-nWyIEIavMIf0DyjHObe8XL8ZdqXjc3Mh7LjOa8POY8NMononyhMOfbArQx8IEj84vJSE3ZB5SUrL24Vs4a93sh8r9uVoIu12FkvS_486_9NFX_ZoP9Nei36dmzk",
+      "is_limited_edition": false,
+      "stock": 22,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Brazalete Infinito",
+      "slug": "brazalete-infinito",
+      "category": "tobilleras",
+      "description": "Brazalete con textura org\u00c3\u00a1nica esculpida a mano que evoca el movimiento infinito del agua. Cada pieza es \u00c3\u00banica, con un acabado que combina superficies pulidas y mate para crear profundidad visual.",
+      "price": "145.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCw9Ie38kosXkZhtHEq8Bdht35qOQWX85AubFm4WbMGDa7N0cHRRT_PmMuWZ8wBf3HTDQ_Ae-FYRf7SYjDxUJmUtCyNvo2F6X-nzpNp8oqXSTe1fmIhlAwr-KbfvzbG00_spEvN7G_wM--BIAvWM1uaiDBJJoYzU2qghRmuV_yanGsmOYla9TiyveXrQ_LwIKLvv2yUfRWQeZlttnBIs8J8l2XXCqhr0MhtF9bDkB5jwAssPCzQ0Tz0U3sUaE_Drlxu_kGwdKkReCA",
+      "is_limited_edition": false,
+      "stock": 7,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "Topos Gota",
+      "slug": "topos-gota",
+      "category": "dijes",
+      "description": "Topos en forma de gota con superficie espejada. Su tama\u00c3\u00b1o compacto y forma cl\u00c3\u00a1sica los convierten en un b\u00c3\u00a1sico imprescindible. Cierre de push-back seguro para uso diario.",
+      "price": "45.00",
+      "material": "Plata 925",
+      "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3yjGrAQpQnJNX9iZJGb_qRVEqF5xu_A2kUSkiy3Yj9HaOo2UlbjfJoeG8YiCj0sDWinC7vO8P2VaWMVefXVnP6HUWYejkqb11Yvifg7TnQ4WmGspuk6Lc76a6MWsp1XUeyyw7Lbs4IVhUrqOVY-Q5W4RbBWfGOWPuh5OBFj_4OoDXwgykUznpi4tMPzOBHwlBLoUGwsplls8VnTLcDEIelzBaPevijawfbHEtepZU1COVwA4GuKy4OKUbGFh2vndORjQpWk60Hyk",
+      "is_limited_edition": false,
+      "stock": 20,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

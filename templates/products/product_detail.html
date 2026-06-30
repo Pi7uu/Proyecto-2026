@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.name }} | LUMINA SILVER{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const selector = document.getElementById('size-selector');
+    const hiddenInput = document.getElementById('selected-size');
+    if (!selector) return;
+    selector.querySelectorAll('.size-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            selector.querySelectorAll('.size-btn').forEach(b => {
+                b.className = 'size-btn w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95';
+            });
+            this.className = 'size-btn w-12 h-12 border border-primary flex items-center justify-center font-body-md bg-surface-container-highest font-bold active:scale-95';
+            hiddenInput.value = this.dataset.size;
+        });
+    });
+});
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="pt-12 pb-section-gap">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Image Gallery (Left) -->
+<div class="md:col-span-7 flex flex-col gap-6">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img id="main-image" alt="{{ product.name }}" class="w-full h-full object-cover product-image-zoom" src="{{ product.image_url }}"/>
+</div>
+{% if product_images %}
+<div id="gallery-thumbs" class="flex gap-4 overflow-x-auto hide-scrollbar">
+{% for img in product_images %}
+<button class="w-20 h-20 flex-shrink-0 overflow-hidden border-2 {% if forloop.first %}border-on-surface{% else %}border-outline-variant{% endif %} transition-colors" onclick="document.getElementById('main-image').src='{{ img.image_url }}'; document.querySelectorAll('#gallery-thumbs button').forEach(b => b.className='w-20 h-20 flex-shrink-0 overflow-hidden border-2 border-outline-variant transition-colors'); this.className='w-20 h-20 flex-shrink-0 overflow-hidden border-2 border-on-surface transition-colors'">
+<img src="{{ img.image_url }}" alt="{{ img.alt_text }}" class="w-full h-full object-cover"/>
+</button>
+{% endfor %}
+</div>
+{% endif %}
+</div>
+<!-- Product Info (Right) -->
+<div class="md:col-span-5 flex flex-col pt-4">
+<div class="mb-2">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-sm rounded-full tracking-widest uppercase">925 Sterling</span>
+{% if product.is_limited_edition %}
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-sm rounded-full tracking-widest uppercase ml-2">Edición Limitada</span>
+{% endif %}
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">{{ product.name }}</h1>
+<p class="font-body-md text-on-surface-variant mb-6 italic">Material: {{ product.material }}</p>
+<div class="text-headline-md font-headline-md text-on-surface mb-8">
+${{ product.price }}
+</div>
+<div class="mb-8">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant">Seleccionar Talla</span>
+<a class="text-label-sm underline underline-offset-4 decoration-outline-variant hover:decoration-primary transition-all" href="#">Guía de tallas</a>
+</div>
+<div class="flex flex-wrap gap-3" id="size-selector">
+<button type="button" class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95" data-size="5">5</button>
+<button type="button" class="size-btn w-12 h-12 border border-primary flex items-center justify-center font-body-md bg-surface-container-highest font-bold active:scale-95" data-size="6">6</button>
+<button type="button" class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95" data-size="7">7</button>
+<button type="button" class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95" data-size="8">8</button>
+<button type="button" class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center font-body-md hover:border-primary transition-colors active:scale-95" data-size="9">9</button>
+</div>
+</div>
+<div class="space-y-4 mb-10">
+<button class="w-full py-5 bg-inverse-surface text-inverse-on-surface font-label-sm uppercase tracking-[0.2em] rounded-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
+Comprar Ahora
+</button>
+<form action="{% url 'cart_add' product.id %}" method="post">
+{% csrf_token %}
+<input type="hidden" name="size" id="selected-size" value="6">
+<button type="submit" class="w-full py-5 border border-inverse-surface text-inverse-surface font-label-sm uppercase tracking-[0.2em] rounded-lg hover:bg-surface-container transition-colors active:scale-[0.98]">
+Añadir al Carrito
+</button>
+</form>
+</div>
+<!-- Product Features / Accordion Style -->
+<div class="border-t border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Descripción</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="mt-4 text-on-surface-variant font-body-md leading-relaxed">
+{{ product.description }}
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Envíos y Devoluciones</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden mt-4 text-on-surface-variant font-body-md leading-relaxed">
+Envío gratuito en todos los pedidos superiores a $150. Las devoluciones se aceptan dentro de los 30 días posteriores a la recepción, siempre que el producto se encuentre en su estado y embalaje original.
+</div>
+</div>
+<div class="border-t border-b border-outline-variant/30 py-6">
+<button class="w-full flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-label-sm uppercase tracking-widest">Cuidado de la Joya</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden mt-4 text-on-surface-variant font-body-md leading-relaxed">
+Evite el contacto con perfumes y productos químicos. Limpie suavemente con el paño de pulido incluido en su pedido para mantener el brillo radiante de la plata.
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended Section -->
+{% if recommended_products %}
+<section class="mt-section-gap">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Recomendados para ti</h2>
+<div class="w-20 h-[1px] bg-primary-fixed"></div>
+</div>
+<a class="font-label-sm uppercase tracking-widest underline underline-offset-8 decoration-outline-variant hover:text-primary transition-colors" href="{% url 'home' %}?category={{ product.category }}">Ver toda la colección</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+{% for rec in recommended_products %}
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ rec.image_url }}" alt="{{ rec.name }}"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <form action="{% url 'cart_add' rec.id %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit" class="w-full py-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm uppercase tracking-widest border border-outline-variant/50">Añadir Rápido</button>
+                            </form>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] mb-1">{{ rec.name }}</h3>
+<p class="font-body-md text-on-surface-variant">${{ rec.price }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+{% endif %}
+</div>
+{% endblock %}

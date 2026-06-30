@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMINA SILVER | Joyería de Plata 925</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1a1c1c",
+                    "surface-bright": "#f9f9f9",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-container-low": "#f3f3f4",
+                    "primary": "#5d5f5f",
+                    "tertiary-fixed-dim": "#bccbb7",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary-container": "#656464",
+                    "surface-container-high": "#e8e8e8",
+                    "outline-variant": "#c4c7c8",
+                    "tertiary": "#556251",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#d8e7d2",
+                    "on-tertiary-fixed": "#131e12",
+                    "on-tertiary-container": "#5a6857",
+                    "on-surface-variant": "#444748",
+                    "surface-tint": "#5d5f5f",
+                    "inverse-surface": "#2f3131",
+                    "on-primary-container": "#636465",
+                    "on-tertiary-fixed-variant": "#3d4a3b",
+                    "inverse-primary": "#c6c6c6",
+                    "on-surface": "#1a1c1c",
+                    "outline": "#747878",
+                    "background": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "surface": "#f9f9f9",
+                    "surface-container-highest": "#e2e2e2",
+                    "secondary-container": "#e4e2e1",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "tertiary-container": "#d8e6d1",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#dadada",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e2e2e2",
+                    "secondary-fixed": "#e4e2e1",
+                    "secondary": "#5f5e5e",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "label-sm": ["DM Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .jewelry-card:hover .quick-add {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .line-divider {
+            height: 0.5px;
+            background-color: #E2E2E2;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed selection:text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto flex justify-between items-center h-20 px-gutter">
+<div class="flex items-center gap-12">
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface-variant" href="#">LUMINA SILVER</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm text-on-surface font-medium border-b border-on-surface pb-1" href="#">Anillos</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors" href="#">Collares</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors" href="#">Aros</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors" href="#">Tobilleras</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant/80 hover:text-on-surface transition-colors" href="#">Dijes</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:block relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="bg-transparent border-b border-outline-variant focus:border-on-surface outline-none pl-10 pr-4 py-1 font-label-sm text-label-sm w-48 transition-all focus:w-64" placeholder="Buscar..." type="text"/>
+</div>
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="Lumina Silver Hero" class="w-full h-full object-cover" data-alt="A high-end editorial lifestyle photograph featuring a sophisticated woman wearing layered 925 sterling silver necklaces and delicate rings. The lighting is soft and cinematic, casting gentle shadows that emphasize the polished metallic textures of the silver. The setting is a minimalist, bright interior with neutral tones and plenty of natural daylight, creating an atmosphere of quiet luxury and refined elegance consistent with a premium jewelry brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYBC7P6d1wv6G5376CeA4LG5kTMn0aI-S_fUQySdljYDXmeB5_s4xB1kNc8B1X_NoTaPqvoyglbjtGYyFfu9TPfIHnpD_Awepx8jJ6s-Dd80pBpgM4rdwAREvWe17SpSjCuqKSTaToF3vSlrUQIybELwuqtwOdmp6csQ8zuPeWGheKk0ZoxnoKEH9Vb6l_uKRH3i3d0qkIgnoECYPM8aCeJ_IJqrYrlGmq3rkFNCbZJJ92FRhFoCwnaaWtfzNSbD6Epj1ayFSoHKo"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.3em] mb-6 block text-surface-bright">Colección Esencial</span>
+<h1 class="font-display-lg text-6xl md:text-8xl mb-8 leading-[1.1]">Elegancia en <br/>Plata Pura.</h1>
+<p class="font-body-lg text-body-lg mb-10 text-surface-container-low max-w-lg">Piezas talladas a mano en plata esterlina 925, diseñadas para perdurar y brillar en cada momento de tu historia.</p>
+<div class="flex gap-4">
+<button class="bg-[#333333] text-white px-10 py-4 font-label-sm text-label-sm uppercase tracking-widest rounded-sm hover:bg-on-background transition-colors">Explorar Todo</button>
+<button class="border border-white text-white px-10 py-4 font-label-sm text-label-sm uppercase tracking-widest rounded-sm hover:bg-white hover:text-on-background transition-all">Ver Lookbook</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Filter -->
+<div class="max-w-container-max mx-auto px-gutter mt-24 mb-12">
+<div class="flex flex-wrap gap-x-12 gap-y-4 border-b border-outline-variant/30 pb-6 overflow-x-auto no-scrollbar">
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold border-b-2 border-on-background pb-5 -mb-6 relative z-10">Todos los productos</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors pb-5">Anillos</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors pb-5">Collares</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors pb-5">Aros</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors pb-5">Tobilleras</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors pb-5">Dijes</button>
+</div>
+</div>
+<!-- Product Grid -->
+<section class="max-w-container-max mx-auto px-gutter pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Anillo Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up product photograph of a minimalist 925 sterling silver ring with a polished, reflective finish. The ring rests on a soft, light-gray textured stone background under bright, diffused studio lighting. The aesthetic is clean, modern, and high-end, focusing on the metallic shimmer and precise craftsmanship of the silver. The overall color palette is composed of shimmering silvers and soft whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-rDznOScdyxzTYWU3Eu9Z_OtTTM7NyHLZLW9pH0B6ESpsqSPA-Y8MlOsonK2MeJJiIpPh0uOc5aev9UX8HCVg-jDltIKWnm-bl9an1o7-bE2SZyXScrsnMWDt85kUVcf08ULFRuolNNl7tv30fgnQI4jLFIPJVxRALfwV5tne6XOG0lr5oXLewlK-0rU2tOoqISbSoFo4wfSjLELagB5dZ5eWWlw__JKMoh26QtMwmGHB6Ab1MlO0mVoZh4lfzynh9KrdONbWo0"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Anillos</span>
+<h3 class="font-headline-md text-lg text-on-surface">Anillo Celestial Minimal</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$85.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Collar Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Detailed studio shot of a delicate sterling silver chain necklace with a small, intricate pendant. The jewelry is presented on a clean, light-colored wooden surface that provides a warm yet minimalist backdrop. Soft lighting emphasizes the fine links of the chain and the subtle gleam of the silver. The image evokes a sense of timeless craftsmanship and elegant simplicity, perfect for a luxury jewelry catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkMZBQ0KAgJlpG2a21wl2cIFPykg_P8wXhnxMnChwMp1CICCuihP9pPvyiGJLNxJvjE3hKN7uE7qPtGY1ClITMNUq_J0MYVJBEjcblp0XrIWAgV0sqBafXITUUPNe32TaBozU9ceR_BpE8vBJeaWFnuoCuPI6DjmBWpJtAFCKbwk2BJ9eSzL7uH545gkDv-t6fo3qu53UCtjagL1XY1mZS77teIgoF0XOhWEqYENx3f6b98UFyH0UA4H93GEr42Iv44yBLK3sAJ7A"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 font-label-sm text-[10px] uppercase tracking-widest rounded-full">Edición Limitada</span>
+</div>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Collares</span>
+<h3 class="font-headline-md text-lg text-on-surface">Cadena de Eslabones Finos</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$120.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Aros Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A pair of elegant 925 sterling silver hoop earrings shown against a pristine white background. The earrings feature a modern architectural twist in their design, creating interesting light reflections. The lighting is crisp and even, highlighting the flawless silver surface and the high-quality craftsmanship. The composition is minimalist and balanced, emphasizing the jewelry as a sculptural piece of art within a high-end luxury context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjC2k80zroWrGzUdpZt5Wx3Nv49x5OGd7XcV_HDTU6tMZ8IV9X7G4NGD5utPpHMI8zKgA3gKNdRaf9Zf2eUUxom-gLbwg5Hc5kCP9WF2YIk0qHfDQvk0LvXKynPE0H2chAumMHoqkhIqwsdsvArEkIN3a0Hxu4IwtyQMmtCQ4MtP5Hb54qvgO95a8H4gbulWEMSdvVatkR-bXN2U9Dg9bZ1MlKqiNUgNPgKmiHgarGn0ld9fxgncF3l8b-Ix81IGiydipvYYeKSg"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Aros</span>
+<h3 class="font-headline-md text-lg text-on-surface">Argollas Twist Escultóricas</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$95.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Pulsera Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end product photograph of a delicate silver bracelet with small charms, arranged artistically on a light linen fabric. The lighting is soft and natural, coming from the side to create gentle depth and reveal the subtle textures of the metal and cloth. The color palette is a harmonious blend of off-whites, light grays, and shimmering silver, evoking a serene and aspirational lifestyle aesthetic consistent with luxury branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3giowNNAlJAENAu-Lm90aU0qI3sO6oCitsZ9lNcvK2Q7IWuTu1Ct4Mp2Ju0G8tyTV0lRhJh4OtzinI9SJNy70f64yGEx3m_BLWdwmbK2DVPxOGxjSLFRQzIUXUntf5JUHEey3FxWrICFJYHXOlxB6GvccT2ZKc0GAtD9eqZswFbARZh3If9Ziw63Nbc78wWnij_HPraOseTgtFtuuPNcCU_BU6vf5c7NvZzeVTupfXI7Zb8P6vhKbIWfhfuQLZkjDBWs2E72LaFQ"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Tobilleras</span>
+<h3 class="font-headline-md text-lg text-on-surface">Tobillera Brisa del Mar</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$65.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Dije Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Professional studio lighting highlights a unique 925 sterling silver pendant with an organic, liquid-like shape. The piece is suspended against a dark, matte charcoal background to emphasize its brilliant silver shine and polished surface. The contrast is sharp and dramatic, showcasing the artistic and contemporary design of the jewelry piece. This high-contrast editorial style conveys a sense of modern sophistication and exclusive luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIiR2U-E2K2AIKNQ0kD-ALD_IUBviOJ3Zg19SOamoFObcx1Q6tUSZdAM2DgWqVPNOVJJ08PF7A5bpORay6P9WpSbButSGOf-Xmh6eGMCpbdfcqnHoCJXC7Bg9coc5CIcLydtsjG26qZjOUh3RjSr-ApSJkHGu5cfqgijM7yAqejRs5Ex_-euZHg5C-fLOJkw0WzCOhYWce2qpkZe5uIv9B0VHyB7P5W51iTsToIkRK504YEVKSgFrku020C8ru9Idf4FMxNnboKYc"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Dijes</span>
+<h3 class="font-headline-md text-lg text-on-surface">Dije Gota de Mercurio</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$45.00</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Anillo Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Macro photography of a thick, architectural 925 sterling silver ring with a brushed matte finish. The ring is centered on a minimalist white surface with soft, diffused shadows that give it a three-dimensional presence. The lighting is high-key and clean, creating a serene and modern visual style. The focus is sharp on the fine brushed grain of the silver, highlighting the precision of the manufacturing and the quality of the materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjUepOBEiXgHzU3U9Jef4M_SPFfNESmIqvHJphPkCH-VnwIju3b5ohLOkQzTlART4jjC7lgXrRxwUiVNG1w7K0VhkEWxV49Kr_rrDhgdht24nUcEPlEl44d3VdevKASOycPDRtoGSaSSvdyW8O_Q24CCNWcdxQgFg7Xl-0CaXsESHDh5MN86V_sn94Z7mDY7wNOFk4y0MbHWB8rFNNaUsY1FaOZW6ApOxuxoaKGvU38u_wEWlmhvq6gYV6haLKEFPJoBCCu_gIwnY"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Anillos</span>
+<h3 class="font-headline-md text-lg text-on-surface">Anillo de Sello Moderno</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$110.00</p>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Collar Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial close-up of a silver locket pendant on a delicate chain, resting against the collarbone of a model with soft, neutral-toned skin. The lighting is natural and warm, creating a soft glow around the silver. The aesthetic is intimate and personal, emphasizing the sentimental value of the jewelry. The background is softly out of focus, keeping the viewer's attention entirely on the shimmering silver piece and its elegant placement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmBBHj568ly0_i4BbA9osrKI7bd7HKQ1FnD9FfjGQBG3wJWuH8G_axBLI3l3LXwNcHkTJZ7USrQN4ijufFRGi3gvvt187ldAK4NSbECydSn64z6CUSfCHaKnNP-ha_qiMYDRURIatHrjkcp9V_vWgm5ojI5W79f8EeG5EmsnflebZUlq88_Tk0monE0suhxHV6QRiWMXyo1JDqY87zAsmDNr3l3uCh7jKQOldFeoH-8BPhv_3ZYPUWBEg7y-V8t_qdN33EKvTs6g0"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Collares</span>
+<h3 class="font-headline-md text-lg text-on-surface">Medallón de Memoria</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$145.00</p>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="jewelry-card group">
+<div class="relative overflow-hidden bg-[#F5F5F5] aspect-[3/4] mb-6 border border-[#E2E2E2]/30">
+<img alt="Aros Silver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist product shot of small sterling silver stud earrings in the shape of delicate stars. They are presented on a clean, light gray surface with soft shadows that emphasize their metallic form. The lighting is bright and airy, creating a sense of purity and precision. The composition is simple yet sophisticated, designed to showcase the fine details of small-scale silver jewelry in a premium retail environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaYentpiHHOKc-xb94dLdIKedUXD6XZfHstyJyOhQ-ADl1843hCNqw8dMn5YOMjqaPIbYreAbGr6ADCt1EzxxVKzKU7yGO8HZ9HIyqvee7s29888_YeGZzVmVAJGx30zbaeOrwnaet1-AGGjpWsK6j-HyKB81wAG0f-O9MHPEV3BZkVEGul4v9CF33-wUkStUB2RcrnkK-D4OdMDev9qbiBgUhfKHbWWOYxgjS0gMVS8sNTdnPZM6KGqmUXDRyS_CvchjGQNIsBZU"/>
+<div class="quick-add opacity-0 translate-y-4 absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] transition-all duration-300">
+<button class="w-full bg-[#333333] text-white py-3 font-label-sm text-label-sm uppercase tracking-widest text-xs">Agregar al Carrito</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-outline">Aros</span>
+<h3 class="font-headline-md text-lg text-on-surface">Mini Aretes Estelares</h3>
+<p class="font-body-md text-sm text-on-surface-variant">$40.00</p>
+</div>
+</div>
+</div>
+<!-- Pagination or Load More -->
+<div class="mt-24 flex flex-col items-center gap-6">
+<div class="line-divider"></div>
+<button class="px-12 py-4 border border-[#333333] text-[#333333] font-label-sm text-label-sm uppercase tracking-widest hover:bg-[#333333] hover:text-white transition-all duration-300">Cargar Más Diseños</button>
+</div>
+</section>
+<!-- Values Section (Bentoish) -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary">verified</span>
+<h4 class="font-headline-md text-xl mb-4">Plata Certificada</h4>
+<p class="text-on-surface-variant">Cada una de nuestras piezas está sellada con el timbre 925, garantizando la pureza y calidad de los metales utilizados.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary">auto_awesome</span>
+<h4 class="font-headline-md text-xl mb-4">Brillo Duradero</h4>
+<p class="text-on-surface-variant">Nuestras joyas reciben un tratamiento especial anti-deslustre para que mantengan su esplendor original por mucho más tiempo.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary">local_shipping</span>
+<h4 class="font-headline-md text-xl mb-4">Envíos Asegurados</h4>
+<p class="text-on-surface-variant">Recibe tus tesoros en la comodidad de tu hogar con empaques premium diseñados para proteger la integridad de cada pieza.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-3xl mx-auto px-gutter text-center">
+<h2 class="font-display-lg text-4xl md:text-5xl mb-6">Únete al Círculo Lumina.</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Recibe acceso anticipado a nuevas colecciones y consejos exclusivos sobre el cuidado de tus joyas.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-1 bg-transparent border-b border-on-surface py-4 px-2 focus:outline-none placeholder:text-outline focus:border-primary transition-colors" placeholder="TU CORREO ELECTRÓNICO" type="email"/>
+<button class="bg-[#333333] text-white px-12 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity">Suscribirme</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-6">
+<a class="font-display-lg text-headline-md text-on-surface" href="#">LUMINA SILVER</a>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant">Joyas que cuentan historias, diseñadas con alma y forjadas en la pureza de la plata 925.</p>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold">Explorar</h5>
+<ul class="flex flex-col gap-3">
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Nuestra Historia</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Guía de Tallas</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Cuidado de Joyas</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Envíos</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold">Servicio al Cliente</h5>
+<ul class="flex flex-col gap-3">
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Términos y Condiciones</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Políticas de Devolución</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold">Síguenos</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-on-surface hover:text-surface transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.947-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-on-surface hover:text-surface transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter mt-24">
+<div class="line-divider mb-8" style="width: 100%;"></div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">© 2024 LUMINA SILVER. CRAFTED IN 925 STERLING.</span>
+<div class="flex gap-6">
+<img alt="Visa" class="h-6 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4oJ8nk3KnBiIOoBXxutitc4Q_xDi4ke5-5y510XWqvZa_AEoPIU9uzi8CFafm-eZBsuqvkgXkhMxI4qVDBNeIaGn2Fo1lYiHYa-sxYGt3NQ-akhsD12-GJrQrR6XUI1n-Z4GmogeIG3yPccIlG6aEt2UaCCEtnwQKCQBXQaa4qzu1IsWr5vqRyqGp6AfrgbfmkVV1UdhiMf82KjXzrF_S3tBx64QubV6OBpc-1sMPg-e-cFPDCcZT1Z2VpQ5j_b45fQfIFg3XzX4"/>
+<img alt="Mastercard" class="h-6 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwZeubFMd6uQT8NA7P1d74JfH6QJ4gy808QDQx1ykUnPiprpCic8J4hYZ42vpl76UIP1WBLscuQg4ryTSLCwvR3o7HVYSyolalv89gberk0UdxxDyh9TWfcZuAnCa1vlY4bgCcNNJ2t1p6CFI98Pk7NihsKyleHbuoZ73Fy0s3EYlWFKkxn8Hfm_IMZc2zOnnfjWE9Xol4G6LSPZEPAW1o0FvuoYhf-kze7jKu2ndvMscYcmmL7XCdZLg1E4gX-bbWOeE4OXViOtA"/>
+<img alt="Paypal" class="h-6 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhhKsRX4Ozoj-asAy3UCX_NNXhVAoZxcIkkg8RWsOd4uaYUfK-pORb6XVSC-Bm7jURBcwL3R8HE5MVToa-kEY33kpGjkjYbLKrNVMiruJ8TBUdCY_yEGEUQs_vAr3rTeM3wALw34P7DZ8YWo9qfI_NjTqYPRe2DEcmXI4x4GtChqdSS6Z9D0l0EGepFXREGbZwQPZHRaL_WZ55d0RLtEnQpEinYUHDs25ndkq1PiGJf01CpbtPp4HaCP8pJRUBtvdAIZVliVmouL0"/>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and effects
+        document.querySelectorAll('.jewelry-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential for adding small JS animations if needed
+            });
+        });
+
+        // Simple smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header transparency scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.classList.add('bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.remove('bg-surface/95');
+            }
+        });
+    </script>
+</body></html>
