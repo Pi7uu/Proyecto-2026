@@ -1,5 +1,7 @@
 # AGENTS.md
 
+> Project purpose: see `overview.md`.
+
 ## Architecture
 
 Django backend + React (Vite) frontend, dual-rendered: Django templates serve SSR pages, React SPA provides `/cart`, `/login`, `/register`, `/orders`.
