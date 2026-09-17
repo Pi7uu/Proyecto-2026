@@ -1,0 +1,13 @@
+# Entorno local
+.env
+
+# Django
+staticfiles/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+
+# Frontend
+src/frontend/dist/
+src/frontend/node_modules/
